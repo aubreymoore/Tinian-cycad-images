@@ -1,7 +1,3 @@
-% Commented out: 
-% \addbibresource
-% \includepdf
-
 \documentclass[12pt,letterpaper,english,bibliography=totocnumbered, abstract=on]{scrartcl}
 
 \usepackage{indentfirst}
@@ -51,7 +47,7 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 
 \author{Aubrey Moore}
 
-\date{March 23, 2022\\Revised March 23, 2022}
+\date{March 23, 2022\\Revised March 24, 2022}
 
 \maketitle
 %\footnote{\url{https://github.com/aubreymoore/2020-FS-CRB-biocontrol-project/blob/master/combined-proposal.pdf}}
@@ -60,9 +56,14 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 
 \pagebreak
 
+The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-cycad-images/raw/main/report/tinian_cycad_images.pdf}.
+
+All data and code used in this report are available in a public GitHub repository at
+\url{https://github.com/aubreymoore/Tinian-cycad-images}.
+
 \section{Introduction}
 
-The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-cycad-images/raw/main/report/tinian_cycad_images.pdf}.
+Ken Puliafico very kindly shared 81 high quality close-up images of \textit{Cycas micronesica} growing on Tinian outside the conservation plots. These were recorded using a Google Pixel 3a cell phone. Some of the images clearly indicated CAS infestation. Images were used to generate an interactive web map to facilitate visualization. 
 
 \begin{figure}[h]
 	\centering
@@ -71,101 +72,36 @@ The most recent version of this document may be downloaded from \url{https://git
 	\label{fig:crawlers}
 \end{figure}
 
+\section{Methods}
 
-\section{Web map}
+All data processing was performed using free, open-source software.
 
-\url{https://aubreymoore.github.io/Tinian-cycad-images/webmap/webmap/}
+Data were prepared using Python 3 in a \href{https://github.com/aubreymoore/Tinian-cycad-images/blob/main/code/select\_1\_image\_at\_each\_location.ipynb}{Jupyter Notebook} which performed the following steps.
 
-%\section{Combined Budget}
-%
-%% Please add the following required packages to your document preamble:
-%% \usepackage{booktabs}
-%% \usepackage[table,xcdraw]{xcolor}
-%% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-%\begin{table}[h]
-%	\centering
-%	\begin{tabular}{@{}lrrr@{}}
-%		\toprule
-%		\multicolumn{1}{c}{\textbf{Item}} & \multicolumn{1}{c}{\textbf{Cost(UOG)}} & \multicolumn{1}{c}{\textbf{Cost(GDOA)}} & \multicolumn{1}{c}{\textbf{Total}} \\ 
-%		\midrule
-%		Personnel & \$83,463 & \$72,987 & \$156,450 \\
-%		Benefits  & \$19,196 & \$5,584 & \$24,780 \\
-%		Travel & \$4,000 & \$0 & \$4,000 \\
-%		Supplies & \$0 & \$2,545 & \$2,545 \\ 
-%		\midrule
-%		\multicolumn{1}{r}{\textbf{SUBTOTAL}} & \textbf{\$106,659} & \textbf{\$81,116} & \textbf{\$187,775} \\ \midrule
-%		Administrative fee & \$15,999 & \$12,167 & \$28,166 \\ \midrule
-%		\multicolumn{1}{r}{\textbf{TOTAL}} & \textbf{\$122,658} & \textbf{\$93,283} & \textbf{\$215,941} \\ \bottomrule
-%	\end{tabular}
-%\end{table}
-%
-%\begin{description}
-%	
-%	\item [{Personnel (UOG)}] includes salary for an insect pathologist (Dr. James Grasela, 1 FTE, \textbf{\$64,000}) and salary for a technician \textbf{\$19,463}.
-%	\textbf{Total=\$83,463}.
-%	
-%	\item [{Benefits (UOG)}] benefits calculated at 23\%*\$83,463=\textbf{\$19,196}.
-%
-%	\item [{Personnel (GDOA)}] Research Associate I, (fulltime, \$20.34/hour, 2080hrs)=\textbf{\$42,307}; 
-%	Research Assistant III (fulltime or 2x halftime, \$14.75/hour, 2080hrs)=\textbf{\$30,680}. Total=\textbf{\$72,987}.
-%	
-%	\item [{Benefits (GDOA)}] Social Security and Medicare (7.65\%*\$72,987)=\textbf{\$5,584}.
-%	
-%	\item [{Travel (UOG)}] includes airfare and other relocation expenses for Dr. Grasela who resides in Missouri.
-%	
-%	\item [{Supplies (GDOA)}]  
-%	Fuel (7,488miles, work truck, 20MPG, \$4.50/gallon)=\textbf{\$1,685}; 
-%	Survey Supplies (peanut butter, chopsticks, fluorescent tape/flags, ziplock bags)=\textbf{\$500}; 
-%	Wrist Garmin GPS units (2x \$180)=\textbf{\$360}. \textbf{Total=\$2,545}.	
-%	
-%	\item [{Administrative~fee (UOG and GDOA)}] 15\% of direct costs
-%	is charged by the Research Corporation of the University of Guam for
-%	services provided. 
-%	
-%\end{description}
-%
-%
-%\pagebreak
-%\section{Little Fire Ant Management}
-%Please see next page.
-%
-%%\includepdf[pages=-]{LFA-proposal.pdf}
-%
-%\section{Coconut Rhinoceros Beetle Biological Control}
-%Please see next page.
-%
-%If you want to use active hyperlinks in the attached document, please download from 
-%\tiny{\url{https://github.com/aubreymoore/2020-FS-CRB-biocontrol-project/blob/master/combined-proposal.pdf}}
-%
-%%\includepdf[pages=-]{proposal.pdf}
-%
-%\newpage{}
-%\begin{appendices}
-%	
-%\section{Form SF-424 (Revised May 5, 2021)}
-%Please see next page.
-%%\includepdf[pages=-]{forms/25k-increase/SF-424-signed.pdf}
-%
-%\section{Form SF-424A (Revised May 4, 2021)}
-%Please see next page.
-%%\includepdf[pages=-]{forms/25k-increase/SF-424A-filled.pdf}
-%
-%\section{Form AD-1047}
-%Please see next page.
-%%\includepdf[pages=-]{forms/AD1047-signed.pdf}
-%
-%\section{Form AD-1049}
-%Please see next page.
-%%\includepdf[pages=-]{forms/AD1049-signed.pdf}
-%
-%\section{Form SF-LLL}
-%Please see next page.
-%%\includepdf[pages=-]{forms/LLL-signed.pdf}
-%
-%\section{Form FS-1500-22A}
-%Please see next page.
-%%\includepdf[pages=-]{forms/FS1500-22A-signed.pdf}
-%
-%\end{appendices}
+\begin{itemize}
+	\item Latitude, longitude and time stamp were extracted from each image file. \item Multiple images taken at each unique location. A folder was created for each unique location and it was populated with images from that location.
+	\item All images in the above folders were examined for presence of cycad aulacaspis scale and an examplar image for the location was selected. This step was performed manually.
+	\item Data for each unique location were stored in a \href{https://github.com/aubreymoore/Tinian-cycad-images/blob/main/images.csv}{CSV file} which was subsequently used for generating a web map.
+\end{itemize}
+
+An interactive web map was prepared using QGIS 3.22. The QGIS project file is available in the GitHub repository.
+
+\clearpage
+\section{Results}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{"Screenshot from 2022-03-24 09-21-42"}
+	\caption{Map showing 3 clusters of \textit{Cycas micronesica} plants. Images plants in the most southern cluster indicate CAS infestation.}
+	\label{fig:screenshot-from-2022-03-24-09-21-42}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{webmap}
+	\caption{Interactive web map of \textit{Cycas micronesica} locations and images.
+	Publicly available at \url{https://aubreymoore.github.io/Tinian-cycad-images/webmap/webmap/}}
+	\label{fig:webmap}
+\end{figure}
 
 \end{document}
